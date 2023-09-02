@@ -33,3 +33,11 @@ p = &w;
 *p = 12;
 cout << v << " " << w; // 7 12
 ```
+
+
+## Pointer Increment
+```cpp
+int *p = &val;
+p++
+```
+- p will point to the next integer location in the memory [next 4 bytes]
