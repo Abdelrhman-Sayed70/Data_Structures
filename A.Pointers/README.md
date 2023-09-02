@@ -36,8 +36,6 @@ cout << v << " " << w; // 7 12
 
 
 ## Pointer Increment
-```cpp
-int *p = &val;
-p++
-```
-- p will point to the next integer location in the memory [next 4 bytes]
+- `ptr++` will point to the next integer location in the memory [next 4 bytes]
+- `++ *ptr` will increment the value at address ptr
+
