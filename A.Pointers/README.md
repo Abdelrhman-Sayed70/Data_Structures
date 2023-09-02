@@ -12,5 +12,14 @@ ptr = &val;
 cout << *ptr; // 5
 ```
 ```cpp
-
+int* p1, * p2, v1, v2;
+p1 = &v1;
+p2 = &v2;
+v1 = 7;
+cout << "v1: " << v1 << " val at p1: " << *p1 << " p1 address: " << p1 << "\n";
+cout << "v2: " << v2 << " val at p2: " << *p2 << " p2 address: " << p2 << "\n";
+```
+```
+v1: 7 val at p1: 7 p1 address: 000000634B0FFC14
+v2: -858993460 val at p2: -858993460 p2 address: 000000634B0FFC34 [v2 assigned to garbage value]
 ```
