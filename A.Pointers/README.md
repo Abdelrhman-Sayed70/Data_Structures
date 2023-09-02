@@ -23,3 +23,13 @@ cout << "v2: " << v2 << " val at p2: " << *p2 << " p2 address: " << p2 << "\n";
 v1: 7 val at p1: 7 p1 address: 000000634B0FFC14
 v2: -858993460 val at p2: -858993460 p2 address: 000000634B0FFC34 [v2 assigned to garbage value]
 ```
+```cpp
+int v, w;
+int* p;
+p = &v;
+v = 3;
+*p = 7;
+p = &w;
+*p = 12;
+cout << v << " " << w; // 7 12
+```
