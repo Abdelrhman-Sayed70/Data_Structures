@@ -11,3 +11,6 @@ int* ptr;
 ptr = &val;
 cout << *ptr; // 5
 ```
+```cpp
+
+```
