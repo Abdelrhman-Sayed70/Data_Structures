@@ -52,9 +52,33 @@ cout << *(++ptr); // pointer to next int in memmory. value = garbage
 - **`*ptr1 = *ptr2`** value assignment. make the val of p1 equal to val of p2
 
 ## Dynamic Variable
-**`int *ptr = new int;`**</br>
-**Create new nameless variable in memory and make ptr points to it**
+- **`int *ptr = new int;`**
+- **`int *ptr = new int(5);`** initialize the pointer value
+  
+**Create a new nameless variable in memory and make ptr points to it**
 ```cpp
-
+int *p1, *p2;
+p1 = new int;
+*p1 = 42;
+p2 = p1;
+cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 42 42
+*p2 = 53;
+cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 53 53
+p1 = new int;
+*p1 = 88;
+cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 88 53
 ```
+
+## Memory Management
+![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/810e9e05-9fe6-4f41-bb96-d3a122055f38)
+- **Text** segment contains `executable instructions`
+- **Initialized Data** segment contains `global variable` `static variables` that are initialized by the programmer
+- **Uninitialized Data** segment contains `global variable` `static variables` that are NOT initialized in the source code
+
+### Stack
+- Contains all variables declared in functions including `main()`
+- When the function call is over, the memory for the variables is deallocated
+
+### Heap [Free Store]
+
 
