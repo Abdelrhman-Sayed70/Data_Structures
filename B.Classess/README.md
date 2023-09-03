@@ -58,3 +58,55 @@ public:
 ### CPP File
 - Implementation `[.cpp file]` contains the implementation of the class methods
 - We should include the header file here and in the main
+
+
+```h
+#pragma once
+#pragma once
+class Rectangle
+{
+private:
+	int width;
+	int lenght;
+
+public:
+	Rectangle();
+	Rectangle(int lenght, int width);
+	int getArea();
+	~Rectangle(void);
+};
+```
+
+```cpp
+#include "Rectangle.h"
+#include<iostream>
+using namespace std;
+
+Rectangle::Rectangle() {
+	this->lenght = 0;
+	this->width = 0;
+}
+
+Rectangle::Rectangle(int lenght, int width) {
+	this->lenght = lenght;
+	this->width = width;
+}
+
+int Rectangle::getArea() {
+	return lenght * width;
+}
+
+Rectangle::~Rectangle(void) {
+	cout << "destructor";
+}
+```
+```cpp
+#include <iostream>
+#include"Rectangle.h"
+using namespace std;
+int main()
+{
+    Rectangle rectangle(3, 4);
+    cout << rectangle.getArea() << "\n";
+}
+```
