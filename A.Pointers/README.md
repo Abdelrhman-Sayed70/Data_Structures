@@ -85,7 +85,7 @@ cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 88 53
 
 
 ## Delete Dynamic Pointer from Heap
-Delete dynamic memory `5 in memory` not the pointer at stack so it still **`dangling pointer`**
+Delete dynamic memory `val in memory` not the pointer at stack so it still **`dangling pointer`**
 ```cpp
 int *ptr = new int(5);
 delete ptr;
