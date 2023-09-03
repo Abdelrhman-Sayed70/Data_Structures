@@ -36,8 +36,9 @@ cout << v << " " << w; // 7 12
 
 
 ## Pointer Arithmetic Operations
-- `ptr++` will point to the next integer location in the memory [next 4 bytes]
+- `ptr++` pointer moves to the next integer location in the memory [next 4 bytes]
 - `++ *ptr` will increment the value at address ptr
+- `* ++ptr` pointer will point to the next int location then **`dereference`** the value of the pointer
 ```cpp
 int val = 5;
 int *ptr = &val;
@@ -91,4 +92,7 @@ int *ptr = new int(5);
 delete ptr;
 ptr = NULL;
 ```
+
+
+## Practice
 
