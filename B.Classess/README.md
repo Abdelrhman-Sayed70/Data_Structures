@@ -21,12 +21,14 @@ instead of Java which assigns default values for each variable `int -> 0` `Strin
 - It can neither return a value nor take any parameter `~ClassName(void){body}`
 - Class has only ONE destructor
 
+
+
+
 ## Class Interface and Implementation
 ### Header File
 - Interface `[.h file]` contains the declaration of the class, variables, and the prototype of methods
 - Can contain more than one class definition
-  
+
 
 ### CPP File
-- Implementation [.cpp file] contains the implementation of the class methods
-
+- Implementation `[.cpp file]` contains the implementation of the class methods
