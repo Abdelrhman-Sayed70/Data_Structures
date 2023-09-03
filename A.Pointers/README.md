@@ -35,7 +35,7 @@ cout << v << " " << w; // 7 12
 ```
 
 
-## Pointer Arithmetic Operations
+## `Pointer Arithmetic Operations`
 - `ptr++` pointer moves to the next integer location in the memory [next 4 bytes]
 - `++ *ptr` will increment the value at address ptr
 - `* ++ptr` pointer will point to the next int location then **`dereference`** the value of the pointer
@@ -48,11 +48,11 @@ cout << *ptr << "\n"; // 6
 cout << *(++ptr); // pointer to next int in memmory. value = garbage
 ```
 
-## Pointer Assignment
+## `Pointer Assignment`
 - **`ptr1 = ptr2`** make ptr1 points to what ptr2 points to
 - **`*ptr1 = *ptr2`** value assignment. make the val of p1 equal to val of p2
 
-## Dynamic Variable
+## `Dynamic Variable`
 - **`int *ptr = new int;`**
 - **`int *ptr = new int(5);`** initialize the pointer value
   
@@ -70,7 +70,7 @@ p1 = new int;
 cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 88 53
 ```
 
-## Memory Management
+## `Memory Management`
 ![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/810e9e05-9fe6-4f41-bb96-d3a122055f38)
 - **Text** segment contains `executable instructions`
 - **Initialized Data** segment contains `global variable` `static variables` that are initialized by the programmer
@@ -85,7 +85,7 @@ cout << "*p1: " << *p1 << ", *p2: " << p2 << "\n"; // 88 53
 - `new` operation fails when heap is complete
 
 
-## Delete Dynamic Pointer from Heap
+## `Delete Dynamic Pointer from Heap`
 delete ptr destroys dynamic memory but ptr still points there! Called **`dangling pointer`** so make it points to null
 ```cpp
 int *ptr = new int(5);
@@ -93,8 +93,33 @@ delete ptr;
 ptr = NULL;
 ```
 
+## `Pointers & Array`
+```cpp
+int numbers[5];
+int *p;
+p = numbers;
+*p = 1;
+p++;
+*p = 2;
+p = &numbers[2];
+*p = 3;
+p = numbers + 3;
+*p = 4;
+p = numbers;
+*(p + 4) = 5;
+for(auto it : numbers)
+    cout << it << " "; // 1 2 3 4 5
+```
+**Indexing pointer. Actually, it takes the address of the pointer and adds to it the index value but does not move the pointer** </br>
+`ptr[0] = ptr + 0` `ptr[1] = ptr + 1` `ptr[2] = ptr + 2`
+```cpp
+int numbers[5] = {1, 2, 3, 4, 5};
+int *p = numbers + 1; // points to numbers [1] = 2
+cout << *p << "\n";
+cout << p[0]; // indexing pointer p + 0 = p -> *p = 2
+```
 
-## Printing Array Elements
+**Printing Array Elements**
 ```cpp
 int arr[5] = {1, 2, 3, 4, 5};
 int *ptr = arr;
@@ -108,5 +133,5 @@ for(int i = 0; i < 5; i++){
 ```
 
 
-## Pointers & Dynamic Arrays
-- **arr name is a [const] pointer points to the first location of array so we cannot change the address of the array**
+## `Dynamic Arrays`
+- **arr name is a [const] pointer that points to the first location of an array so we cannot change the address of the array**
