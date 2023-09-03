@@ -109,4 +109,4 @@ for(int i = 0; i < 5; i++){
 
 
 ## Pointers & Dynamic Arrays
-
+- **arr name is a [const] pointer points to the first location of array so we cannot change the address of the array**
