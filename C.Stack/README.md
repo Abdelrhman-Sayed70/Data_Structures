@@ -89,3 +89,9 @@ int main()
 	}
 }
 ```
+
+
+## `Expand`
+- Create a new dynamic array with a greater size
+- Copy and paste the old array into the expanded array
+- Make the class array point to the expanded array
