@@ -38,7 +38,23 @@ cout << v << " " << w; // 7 12
 ## Pointer Arithmetic Operations
 - `ptr++` will point to the next integer location in the memory [next 4 bytes]
 - `++ *ptr` will increment the value at address ptr
+```cpp
+int val = 5;
+int *ptr = &val;
+cout << *ptr << "\n"; // 5
+++ *ptr;
+cout << *ptr << "\n"; // 6
+cout << *(++ptr); // pointer to next int in memmory. value = garbage
+```
 
 ## Pointer Assignment
+- **`ptr1 = ptr2`** make ptr1 points to what ptr2 points to
+- **`*ptr1 = *ptr2`** value assignment. make the val of p1 equal to val of p2
 
+## Dynamic Variable
+**`int *ptr = new int;`**</br>
+**Create new nameless variable in memory and make ptr points to it**
+```cpp
+
+```
 
