@@ -18,6 +18,11 @@ delete []arr;
 arr = NULL 
 ```
 
+## `Expanding Array Size`
+```cpp
+
+```
+
 ## Exercise
 - Use pointers to represent a family tree.
 - We need to know each person’s name as well as who their parent is.
