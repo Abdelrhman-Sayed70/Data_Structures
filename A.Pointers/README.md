@@ -181,4 +181,28 @@ int main()
 	cout << person3->parent->name; // sayed
 }
 ```
+**Another Solution**
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+struct Person {
+	string name;
+	Person* parent;
 
+	Person(){}
+
+	Person(string name, Person* parent) {
+		this->name = name;
+		this->parent = parent;
+	}
+};
+int main()
+{
+	Person person1("gaber", NULL);
+	Person person2("sayed", &person1);
+	Person person3("abdo", &person2);
+
+	cout << "parent of " << person3.name << ": " << person3.parent->name << "\n";
+	cout << "grand father of " << person3.name << ": " << person3.parent->parent->name;
+}
+```
