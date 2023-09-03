@@ -94,5 +94,19 @@ ptr = NULL;
 ```
 
 
-## Practice
+## Printing Array Elements
+```cpp
+int arr[5] = {1, 2, 3, 4, 5};
+int *ptr = arr;
+for(int i = 0; i < 5; i++){
+    cout << arr[i] << " ";
+    cout << *ptr++ << " ";
+    // or cout << ptr[i] << " ";
+    // or cout << *(ptr + i) << " ";
+    cout << "\n";
+}
+```
+
+
+## Pointers & Dynamic Arrays
 
