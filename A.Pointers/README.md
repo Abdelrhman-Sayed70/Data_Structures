@@ -94,6 +94,7 @@ ptr = NULL;
 ```
 
 ## `Pointers & Array`
+**arr name is a [const] pointer that points to the first location of an array so we cannot change the address of the array**
 ```cpp
 int numbers[5];
 int *p;
@@ -134,4 +135,23 @@ for(int i = 0; i < 5; i++){
 
 
 ## `Dynamic Arrays`
-- **arr name is a [const] pointer that points to the first location of an array so we cannot change the address of the array**
+- Size not specified at program design time
+- Determined while the program runs
+- Can grow and shrink as needed•
+- Initially initialized with garbage values of the size instead of the static array which initially initialized by zeroes
+```cpp
+int sz;
+cin >> sz;
+int *arr = new int[sz];   
+```
+**Can be initialized with zeroes**
+```cpp
+int *arr = new int[sz]();
+```
+**delete the ptr**
+```cpp
+delete []arr;
+arr = NULL 
+```
+
+
