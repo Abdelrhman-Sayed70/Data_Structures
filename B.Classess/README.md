@@ -21,10 +21,35 @@ instead of Java which assigns default values for each variable `int -> 0` `Strin
 - It can neither return a value nor take any parameter `~ClassName(void){body}`
 - Class has only ONE destructor
 
+```cpp
+class Rectangle {
+private:
+	int width;
+	int lenght;
+
+public:
+	Rectangle() {
+		this->width = 0;
+		this->lenght = 0;
+	}
+
+	Rectangle(int width, int lenght) {
+		this->width = width;
+		this->lenght = lenght;
+	}
+
+	int getArea() {
+		return width * lenght;
+	}
+
+	~Rectangle(void) {
+		cout << "destructor";
+	}
+};
+```
 
 
-
-## Class Interface and Implementation
+## `Class Interface and Implementation`
 ### Header File
 - Interface `[.h file]` contains the declaration of the class, variables, and the prototype of methods
 - Can contain more than one class definition
