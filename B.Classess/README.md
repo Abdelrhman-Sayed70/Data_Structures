@@ -51,9 +51,10 @@ public:
 
 ## `Class Interface and Implementation`
 ### Header File
-- Interface `[.h file]` contains the declaration of the class, variables, and the prototype of methods
-- Can contain more than one class definition
+- Interface `[.h file]` contains the class skeleton: class declaration, variables, and the prototype of methods
+- Can contain more than one different classes
 
 
 ### CPP File
 - Implementation `[.cpp file]` contains the implementation of the class methods
+- We should include the header file here and in the main
