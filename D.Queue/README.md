@@ -1,5 +1,8 @@
 # Queue
 
+## `Circular Array`
+If the back element is at the last position of the array and I want to add another one, then we can insert it at the front of array if there is a place. We used this concept in inserting new elements in the queue
+
 ```h
 #pragma once
 template<class T>
