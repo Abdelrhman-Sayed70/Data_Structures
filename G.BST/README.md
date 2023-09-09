@@ -13,3 +13,10 @@
 - `In-order` left, root, right `Sorted Output`
 - `Pre-order` root, left, right
 - `Post-order` left, right, root
+
+
+# Complexity
+**`The worst-case complexity to insert a new element in`**
+- BST -> O(N)
+- Balanced BST -> O(log n)
+
