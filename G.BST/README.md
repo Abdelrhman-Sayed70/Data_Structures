@@ -10,7 +10,6 @@
 
 
 # `Tree Traversal`
-- `In-order` left, root, right
+- `In-order` left, root, right `Sorted Output`
 - `Pre-order` root, left, right
 - `Post-order` left, right, root
-
