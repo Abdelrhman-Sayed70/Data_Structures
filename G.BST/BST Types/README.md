@@ -34,3 +34,6 @@ A Binary Tree in which the height of the left and the right sub-trees of every n
 
 ![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/e11f1500-7b3b-4e90-a0c0-2dbf092d5815)
 
+
+## `Example`
+![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/cd15d1e0-2a0c-4b9a-b90a-a8e60608fdec)
