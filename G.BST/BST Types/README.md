@@ -27,3 +27,10 @@ Binary Tree in which
 - All the leaf nodes are at the same depth or same level.
 
 ![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/d0845255-a5db-4d0f-bbd4-0a6aa98b801d)
+
+
+## `Balanced Binary Tree`
+A Binary Tree in which the height of the left and the right sub-trees of every node may differ by at most 1.
+
+![image](https://github.com/Abdelrhman-Sayed70/Data_Structures/assets/99830416/e11f1500-7b3b-4e90-a0c0-2dbf092d5815)
+
